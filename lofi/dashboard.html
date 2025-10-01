@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard POS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header dashboard-header">
+        <h1>Dashboard POS</h1>
+        <div class="header-actions">
+            <div class="action-icon">⚙️</div>
+            <div class="action-icon">↗️</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Welcome Card -->
+        <div class="welcome-card">
+            <h2>Selamat datang, dimas!</h2>
+            <p class="date">Tanggal: 01 October 2025</p>
+        </div>
+
+        <!-- Sales Card -->
+        <div class="sales-card">
+            <h3>Total Penjualan Hari Ini</h3>
+            <p class="sales-amount">Rp 0</p>
+        </div>
+
+        <!-- Main Menu -->
+        <div class="main-menu">
+            <h3>Menu Utama</h3>
+            <div class="menu-grid">
+                <div class="menu-card" onclick="navigateTo('product-management.html')">
+                    <div class="menu-icon products-icon">📦</div>
+                    <span>Produk</span>
+                </div>
+                <div class="menu-card" onclick="navigateTo('new-transaction.html')">
+                    <div class="menu-icon transaction-icon">🛒</div>
+                    <span>Transaksi Baru</span>
+                </div>
+                <div class="menu-card" onclick="navigateTo('transaction-history.html')">
+                    <div class="menu-icon history-icon">🔄</div>
+                    <span>Riwayat Transaksi</span>
+                </div>
+                <div class="menu-card" onclick="navigateTo('advanced-reports.html')">
+                    <div class="menu-icon reports-icon">📊</div>
+                    <span>Laporan</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
